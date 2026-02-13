@@ -7,10 +7,10 @@ function createMap() {
     map = L.map('map').setView([32, -81], 9);
 
     // Add the Alidade Smooth Dark base tilelayer to the map
-    L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         minZoom: 0,
         maxZoom: 20,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://www.openstreetmap.bzh/" target="_blank">Breton OpenStreetMap Team</a>',
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
         ext: 'png'
     }).addTo(map);
 
